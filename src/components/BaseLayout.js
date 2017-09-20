@@ -6,12 +6,12 @@ export default class BaseLayout extends Component {
     return (
       <div className="container">
         <nav className="navbar navbar-light bg-faded">
-          <img src=""/>
+          <img src="" alt=""/>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/portfolio">Portfolio</Link>
         </nav>
-        <main className="card">
+        <main>
           {this.props.children}
         </main>
       </div>
