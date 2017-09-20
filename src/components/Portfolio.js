@@ -24,12 +24,12 @@ export default class Portfolio extends Component {
       let rand = this.state.data[random]
 
       let github =
-      <div className="card">
+      <div className="card w-25 ml-4" style={{float: 'right'}}>
         <div className="card-header">Random GitHub Project</div>
         <div className="card-block p-4">
-          <div className="card-title">{rand.name}</div>
+          <h3 className="card-title">{rand.name}</h3>
           <p className="cart-text">{rand.description}</p>
-          <Link className="btn btn-primary" to={rand.html_url}>Check it out</Link>
+          <a className="btn btn-primary" href={rand.html_url}>Check it out</a>
         </div>
       </div>
 
@@ -39,12 +39,12 @@ export default class Portfolio extends Component {
   }
   render() {
     return (
-      <div className="card">
+      <div className="card d-flex">
         <div className="card-block p-4">
+          {this.state.random}
           <h1 className="display-4">My Portfolio</h1>
           <p className="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam viverra urna in ante sodales facilisis. Phasellus nunc arcu, interdum nec aliquet ut, ornare eu lorem. Vestibulum massa elit, consectetur vitae tristique nec, porta ultricies metus. Phasellus eget sagittis nisl. Vestibulum eget vestibulum lectus, vel consequat diam.</p>
-          {this.state.random}
         </div>
       </div>
     )

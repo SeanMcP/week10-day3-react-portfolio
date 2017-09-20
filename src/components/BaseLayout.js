@@ -6,7 +6,7 @@ export default class BaseLayout extends Component {
     return (
       <div className="container">
         <nav className="navbar navbar-light bg-faded">
-          <img src="" alt=""/>
+          <Link className="navbar-brand" to="/"><img src="http://seanmcp.com/img/favicon.png" alt="" style={{height: 50}}/></Link>
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/portfolio">Portfolio</Link>
