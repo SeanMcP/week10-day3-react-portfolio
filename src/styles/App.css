@@ -22,3 +22,12 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+nav.navbar > a.navlink {
+  border-radius: 3px;
+  padding: 5px 10px;
+  background: red;
+}
+.selected {
+  background: rgba(0, 0, 0, 0.1);
+}
