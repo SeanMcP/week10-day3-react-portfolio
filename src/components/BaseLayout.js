@@ -10,6 +10,8 @@ export default class BaseLayout extends Component {
           <NavLink activeClassName="selected" className="navlink" exact to="/">Home</NavLink>
           <NavLink activeClassName="selected" className="navlink"  to="/about">About</NavLink>
           <NavLink activeClassName="selected" className="navlink"  to="/portfolio">Portfolio</NavLink>
+          <NavLink activeClassName="selected" className="navlink"  to="/contact">Contact</NavLink>
+          <NavLink activeClassName="selected" className="navlink"  to="/references">References</NavLink>
         </nav>
         <main>
           {this.props.children}
